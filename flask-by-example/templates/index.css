@@ -1,0 +1,40 @@
+#lonely-challenge {
+  display: none;
+ }
+
+#numLonely {
+  display: none;
+ }
+
+#numHappy {
+  display: none;
+
+}
+#happy-challenge {
+  display: none;
+}
+#jumbotron {
+  display: none;
+}
+#name[type=text]{
+resize:horizontal;
+width: 300px;
+height: 25px;
+padding: 20px 10px;
+border-color: transparent;
+overflow:auto;
+}
+#secondInput[type=text]{
+  border-color:powederblue;
+}
+#happyChallenges {
+  border-color:black;
+
+}
+#lonelyChallenges {
+  border-color:black;
+}
+
+#display-3 {
+font-size: 100px;
+}

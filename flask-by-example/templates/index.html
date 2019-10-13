@@ -7,16 +7,30 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href=".\css\index.css"
+		<link rel="stylesheet" type="text/css" href="index.css"
 		<title></title>
 	</head>
 
-	<body>
+	<body> <center>
+	  <div class="welcome">
+	    <body style="background-color:powderblue;">
+	    <h1 class="display-3" style="font-family: ;"> <font color= white><center>Welcome</center></font> </h1>
 
-		<div class="jumbotron">
-	    <h1 class="display-4">Friends</h1>
-	    <p class="lead">How are you feeling today?</p>
-	    <hr class="my-4">
+	  <form> <h3 class="enterName" style="font-family: ;"> <font color= white><center>Enter name:  <input type="text" name="userName" value="" id = "userName"> <br> </center></font></h3></form>
+	    <p class="nameclass">
+	        <a class="btn btn-info btn-lg" href="#" role="button" style="font-family: " id="nametransition">enter</a>
+	      </p>
+
+	    </body>
+	  </div>
+
+	  <div class="jumbotron">
+	    <center>
+	    	<p class="lead" bgcolor = grey>How are you feeling today?</p>
+	    	<hr class="my-4">
+	      <div> <center> <pre id="nameSpace"> </pre></center>
+	      </div>
+	    </center>
 
 			<form  action="/upload" method="post" enctype="multipart/form-data">
 				<p>Input a Audio File</p>
@@ -31,9 +45,8 @@
 			</form>
 
 
-	    <p id="lonelyclass">
-				<br>
-	    	<a class="btn btn-info btn-lg" href="#" role="button" 		id="lonely">Lonely :/</a>
+			<p id="lonelyclass">
+	    	<a class="btn btn-info btn-lg" href="#" role="button" style="font-family: " id="lonely">Lonely :/</a>
 	      <!-- class does the color of button -->
 	    </p>
 	  <div>
@@ -41,7 +54,7 @@
 	    </div>
 
 	    <p class="happyclass">
-	      <a class="btn btn-warning btn-lg" href="#" role="button"  id="happy">Happy :)</a>
+	      <a class="btn btn-warning btn-lg" href="#" role="button" style="font-family: " id="happy">Happy :)</a>
 	    </p>
 	    <div>
 	       <pre id="numHappy"></pre>
@@ -50,29 +63,33 @@
 
 
 	  <div id="lonely-challenge">
-	    <h1> Conquer Loneliness </h1>
-	      <div> <pre id="target-lonely-challege"> </pre>
+	    <h2><font color= white><center>Sorry to hear that :( </center></font></h2>
+	    <h4><center>On that note, I've got a challenge for you! Hopefully it helps!</center></h4>
+	      <div> <center> <pre id="Output-lonely-challenge"> </pre>
+	        </center>
 	      </div>
-	       <a class="btn btn-primary btn-lg" href="#" role="button" id="lonelyChallenges">Completed</a>
+	       <a class="btn btn-outline-info btn-lg" href="#" role="button" id="lonelyChallenges"><font color = black><center>Completed</center></font></a>
 
-	    <div> Times Completed: <pre id="numLonelyCompleted"> </pre>
+	    <div><center> Times Completed: <pre id="numLonelyCompleted"> </pre> </center>
 	    </div>
 	  </div>
 	    <div id="happy-challenge">
-	      <h1> Stay Happy </h1>
-	<form>
+	      <h2><font color= white><center>Glad to hear! Life's pretty great! </center></font></h2>
+	      <h5><center> Think of 3 things you are grateful for today and write them down! </center></h5>
+	<form> <center>
 	Grateful #1: <input type="text" name="firstInput" value="" id = "firstGratitude"> <br>
 	Grateful #2: <input type="text" name="secondInput" value="" id = "secondGratitude"> <br>
 	Grateful #3: <input type="text" name="thirdInput" value ="" id = "thirdGratitude"> <br>
-	</form>
-	    	<a class="btn btn-primary btn-lg" href="#" role="button" id="happyChallenges">Completed</a>
+	  </center></form>
+	    	<a class="btn btn-outline-warning btn-lg" href="#" role="button" id="happyChallenges"><font color = black><center>Completed</center></font></a>
 
-	      <div> Times Completed: <pre id="numHappyCompleted"> </pre>
+	      <div> Times Completed: <pre id="numHappyCompleted"> 					</pre>
 	      </div>
 	  <!-- Form Code -->
 	   </div>
-		 <script src="./js/index.js"></script>
+		 <script src="index.js"></script>
 
 
 	</body>
+
 </html>

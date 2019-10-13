@@ -1,3 +1,5 @@
+var progressTracker = 0;
+
 var numLonely = { countLonely: -1 }; //# times click "lonely"
 
 var numLonelyCompleted = { pointsLonely: -1 }; // # times click "completed" in lonely-challenge
@@ -17,13 +19,18 @@ $("#happyChallenges").click(function(e) {
   $("#secondGratitude").val("");
   $("#thirdGratitude").val("");
 });
+
+// var storeName = name;
+
 var lonelyChallenges = [
 
-  "Sit with someone new today when you eat",
-  "Reach out to a new friend and plan a time to eat or hang out",
-  "Go to MHacks!",
+  "Sit with someone new today in the dining hall",
+  "Reach out to a friend and plan a time to eat or hang out",
   "Check in with highschool friends",
-  "Find a club you like and keep going!"
+  "Check in with family",
+  "Check in with how others around you are doing",
+  "Join a club and attend at least 3 times",
+  "Keep your door open to the hallway for 1 week"
 
   ];
  var i = 0;
@@ -44,6 +51,9 @@ var lonelyChallenges = [
 // var randomLonely =
 //    lonelyChallenges= [Math.floor(Math.random()*lonelyChallenges.length)];
 
+ $("#enterName").click(function(e) {
+    $("#nameSpace").html("work in progress");
+ });
 
 // count numLonely and toggle to lonely-challenge
 $(function() {
@@ -58,7 +68,7 @@ $("#lonely").click(function(e) {
 
 function incrementLonelyCount() {
   numLonely.countLonely++;
-  $("#target-lonely-challege").html(rightLChallenge);
+  $("#Output-lonely-challenge").html(rightLChallenge);
   $("#numLonely").text(numLonely.countLonely);
 }
 
